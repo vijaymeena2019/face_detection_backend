@@ -106,7 +106,7 @@ app.use(cors());
 // Default page
 
 app.get("/", (req, res) => {
-    res.get("success");
+    res.send("success");
 })
 
 // imageUrl
