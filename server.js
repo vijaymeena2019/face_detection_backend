@@ -329,6 +329,6 @@ app.put('/image', (req, res) => {
     // if (!found) res.json('user no found');
 })
 
-app.listen(3000, () => {
-    console.log('app is running')
+app.listen(process.env.PORT || 3000, () => {    // process.env.PORT is added to deploy on heroku
+    console.log(`app is running on port ${process.env.PORT}`)
 });
